@@ -30,12 +30,14 @@ header .branding h1{
 }
 
 header{
+    width: 100%;
     background: #35424a;
     color: #ffffff;
     padding-top: 30px;
     min-height: 70px;
     border-bottom: #e8491d 3px solid;
     overflow: hidden;
+    position:fixed;
 }
 header a{
     color: #ffffff;
@@ -77,7 +79,9 @@ header a:hover{
 
 #showcase {
     min-height: 400px;
-    background:url('../images/showcase.jpg') no-repeat 0 -400px;
+    /* background:url('../images/showcase.jpg') no-repeat 0 -400px; */
+    background-image: url('../images/showcase.jpg');
+    background-repeat: no-repeat;
     text-align: center;
 }
 
@@ -98,11 +102,13 @@ header a:hover{
 }
 
 #newsletter h1{
+    padding-left:330px;
     float:left;
 }
 
 #newsletter form{
     float:right;
+    padding-right:40px;
     margin-top:15px;
 }
 
@@ -110,6 +116,10 @@ header a:hover{
     padding:4px;
     height:25px;
     width: 250px;
+}
+
+#newsletter button[type="submit"]{
+    height: 35px;
 }
 
 #boxes{
@@ -135,10 +145,16 @@ footer{
     text-align: center;
   }
 
-footer li{
+footer li{   
+    height:50px;
     display: inline;
 }
 
-#social-links{
+#social-links{    
     float: right;
+}
+.links{
+    font-size: 20px;
+    padding-bottom:50px;
+    padding-right:30px;
 }
